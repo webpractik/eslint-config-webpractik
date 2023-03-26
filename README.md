@@ -1,5 +1,15 @@
 # eslint-config-webpractik
 
+## Подключение
+``` json
+// .eslintrc
+
+{
+    "extends": ["webpractik"]
+}
+```
+
+
 ## Extends & Plugins:
 
 - airbnb
