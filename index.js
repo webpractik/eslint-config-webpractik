@@ -1,5 +1,4 @@
 module.exports = {
-    root: true,
     env: {
         browser: true,
         node: true,
@@ -107,6 +106,7 @@ module.exports = {
         ],
         'import/extensions': 'off',
         'import/prefer-default-export': 'off',
+        'import/no-cycle': 'off',
         'import/no-extraneous-dependencies': ['error', { includeTypes: true }],
         'jsx-a11y/anchor-is-valid': 'off',
         'jsx-a11y/click-events-have-key-events': 'off',

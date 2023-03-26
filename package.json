@@ -3,31 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webpractik/eslint-config-webpractik.git"
   },
   "keywords": [
     "eslint",
-    "config"
+    "config",
+    "webpractik"
   ],
   "author": "Vorobiev Pavel",
   "license": "ISC",
-  "engines": {
-    "node": ">= 16",
-    "npm": ">= 8"
-  },
   "peerDependencies": {
     "eslint": ">= 7"
   },
-  "bugs": {
-    "url": "https://github.com/webpractik/eslint-config-webpractik/issues"
-  },
-  "homepage": "https://github.com/webpractik/eslint-config-webpractik#readme",
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "5.56.0",
     "@typescript-eslint/parser": "5.56.0",
     "eslint-config-airbnb": "19.0.4",
@@ -46,5 +36,9 @@
     "eslint-plugin-sonarjs": "0.19.0",
     "eslint-plugin-unused-imports": "2.0.0",
     "eslint-plugin-xss": "0.1.12"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/webpractik/eslint-config-webpractik/issues"
+  },
+  "homepage": "https://github.com/webpractik/eslint-config-webpractik#readme"
 }

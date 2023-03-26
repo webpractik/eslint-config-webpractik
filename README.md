@@ -5,6 +5,7 @@
 // .eslintrc
 
 {
+    "root": true,
     "extends": ["webpractik"]
 }
 ```
