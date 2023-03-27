@@ -25,6 +25,7 @@ module.exports = {
         'plugin:react-prefer-function-component/recommended',
         'plugin:xss/recommended',
         'plugin:sonarjs/recommended',
+        'plugin:lodash/recommended'
     ],
     plugins: [
         '@typescript-eslint',
@@ -40,6 +41,7 @@ module.exports = {
         'xss',
         'no-secrets',
         'sonarjs',
+        'lodash'
     ],
     rules: {
         'no-duplicate-imports': 'error',

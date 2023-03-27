@@ -22,6 +22,7 @@
 - import
 - simple-import-sort
 - unused-imports
+- lodash
 - sonarjs
 - no-use-extend-native
 - react-prefer-function-component
