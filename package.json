@@ -26,6 +26,7 @@
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-jsx-a11y": "6.7.1",
     "eslint-plugin-lodash": "7.4.0",
+    "eslint-plugin-mobx": "0.0.9",
     "eslint-plugin-no-secrets": "0.8.9",
     "eslint-plugin-no-use-extend-native": "0.5.0",
     "eslint-plugin-prettier": "4.2.1",

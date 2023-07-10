@@ -25,7 +25,8 @@ module.exports = {
         'plugin:react-prefer-function-component/recommended',
         'plugin:xss/recommended',
         'plugin:sonarjs/recommended',
-        'plugin:lodash/recommended'
+        'plugin:lodash/recommended',
+        'plugin:mobx/recommended',
     ],
     plugins: [
         '@typescript-eslint',
@@ -41,7 +42,7 @@ module.exports = {
         'xss',
         'no-secrets',
         'sonarjs',
-        'lodash'
+        'lodash',
     ],
     rules: {
         'no-duplicate-imports': 'error',
@@ -116,6 +117,7 @@ module.exports = {
         'prettier/prettier': 'error',
         '@typescript-eslint/no-use-before-define': 'error',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
         '@typescript-eslint/no-unused-vars': 'error',
         'simple-import-sort/imports': 'warn',
         'simple-import-sort/exports': 'warn',
