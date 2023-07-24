@@ -18,8 +18,8 @@
     "eslint": ">= 7"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "5.61.0",
-    "@typescript-eslint/parser": "5.61.0",
+    "@typescript-eslint/eslint-plugin": "6.1.0",
+    "@typescript-eslint/parser": "6.1.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-prettier": "8.8.0",
     "eslint-import-resolver-typescript": "3.5.5",
@@ -29,13 +29,13 @@
     "eslint-plugin-mobx": "0.0.9",
     "eslint-plugin-no-secrets": "0.8.9",
     "eslint-plugin-no-use-extend-native": "0.5.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-prettier": "5.0.0",
+    "eslint-plugin-react": "7.33.0",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-prefer-function-component": "3.1.0",
     "eslint-plugin-simple-import-sort": "10.0.0",
     "eslint-plugin-sonarjs": "0.19.0",
-    "eslint-plugin-unused-imports": "2.0.0",
+    "eslint-plugin-unused-imports": "3.0.0",
     "eslint-plugin-xss": "0.1.12"
   },
   "bugs": {
