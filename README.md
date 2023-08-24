@@ -13,7 +13,6 @@
 
 ## Extends & Plugins:
 
-- airbnb
 - @typescript-eslint
 - react
 - react-hooks
@@ -23,6 +22,8 @@
 - simple-import-sort
 - unused-imports
 - lodash
+- mobx
+- storybook
 - sonarjs
 - no-use-extend-native
 - react-prefer-function-component

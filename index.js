@@ -14,8 +14,6 @@ module.exports = {
         },
     },
     extends: [
-        'airbnb',
-        'airbnb/hooks',
         'prettier',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
@@ -27,6 +25,7 @@ module.exports = {
         'plugin:sonarjs/recommended',
         'plugin:lodash/recommended',
         'plugin:mobx/recommended',
+        'plugin:storybook/recommended',
     ],
     plugins: [
         '@typescript-eslint',
