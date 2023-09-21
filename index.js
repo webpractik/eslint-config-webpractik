@@ -131,6 +131,7 @@ module.exports = {
             },
         ],
         'lodash/prefer-lodash-method': 'off',
+        'mobx/missing-observer': 'off',
         'xss/no-mixed-html': [
             2,
             {
