@@ -24,7 +24,6 @@ module.exports = {
         'plugin:xss/recommended',
         'plugin:sonarjs/recommended',
         'plugin:lodash/recommended',
-        'plugin:mobx/recommended',
         'plugin:storybook/recommended',
     ],
     plugins: [
@@ -42,6 +41,7 @@ module.exports = {
         'no-secrets',
         'sonarjs',
         'lodash',
+        '@tanstack/query',
     ],
     rules: {
         'no-duplicate-imports': 'error',
@@ -131,7 +131,6 @@ module.exports = {
             },
         ],
         'lodash/prefer-lodash-method': 'off',
-        'mobx/missing-observer': 'off',
         'xss/no-mixed-html': [
             2,
             {
