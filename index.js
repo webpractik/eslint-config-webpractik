@@ -26,6 +26,7 @@ module.exports = {
         require.resolve('./rules/best-practice'),
         require.resolve('./rules/react'),
         require.resolve('./rules/import'),
+        require.resolve('./rules/unicorn'),
     ],
     plugins: [
         '@typescript-eslint',
