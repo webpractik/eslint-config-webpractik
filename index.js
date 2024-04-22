@@ -23,6 +23,7 @@ module.exports = {
         'plugin:sonarjs/recommended',
         'plugin:storybook/recommended',
         'plugin:unicorn/recommended',
+        'plugin:compat/recommended',
         require.resolve('./rules/best-practice'),
         require.resolve('./rules/react'),
         require.resolve('./rules/import'),
@@ -40,7 +41,7 @@ module.exports = {
         'xss',
         'no-secrets',
         'sonarjs',
-        '@tanstack/query',
+        'compat',
         'unicorn',
     ],
     rules: {
