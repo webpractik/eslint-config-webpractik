@@ -21,7 +21,7 @@ module.exports = {
         'plugin:react-hooks/recommended',
         'plugin:jsx-a11y/recommended',
         'plugin:xss/recommended',
-        'plugin:sonarjs/recommended',
+        'plugin:sonarjs/recommended-legacy',
         'plugin:storybook/recommended',
         'plugin:unicorn/recommended',
         'plugin:compat/recommended',
