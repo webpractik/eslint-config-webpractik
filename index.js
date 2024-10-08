@@ -53,6 +53,8 @@ module.exports = {
         '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
         '@typescript-eslint/no-unused-vars': 'error',
 
+        'sonarjs/sonar-prefer-read-only-props': 'off',
+
         'xss/no-mixed-html': [
             2,
             {
