@@ -1,5 +1,4 @@
 import { fixupConfigRules, fixupPluginRules } from "@eslint/compat";
-import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import prettier from "eslint-plugin-prettier";
@@ -12,16 +11,13 @@ import noSecrets from "eslint-plugin-no-secrets";
 import sonarjs from "eslint-plugin-sonarjs";
 import unicorn from "eslint-plugin-unicorn";
 import globals from "globals";
-import tsParser from "@typescript-eslint/parser";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import eslintTs from 'typescript-eslint'
 import js from "@eslint/js";
 import { FlatCompat } from "@eslint/eslintrc";
 
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
 const __dirname = import.meta.dirname;
-
+const tsPlugin = eslintTs.plugin
+const tsParser = eslintTs.parser
 const compat = new FlatCompat({
     baseDirectory: __dirname,
     recommendedConfig: js.configs.recommended,
@@ -46,7 +42,7 @@ export default [...fixupConfigRules(compat.extends(
     "/home/dmitri/projects/eslint-config-webpractik/rules/unicorn.js",
 )), {
     plugins: {
-        "@typescript-eslint": fixupPluginRules(typescriptEslint),
+        "@typescript-eslint": fixupPluginRules(tsPlugin),
         react: fixupPluginRules(react),
         "react-hooks": fixupPluginRules(reactHooks),
         prettier,
@@ -98,6 +94,7 @@ export default [...fixupConfigRules(compat.extends(
     },
 
     rules: {
+        ...js.configs.recommended.rules,
         "prettier/prettier": "error",
         "@typescript-eslint/no-use-before-define": "error",
         "@typescript-eslint/explicit-module-boundary-types": "off",
