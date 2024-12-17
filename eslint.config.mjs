@@ -14,7 +14,6 @@ import globals from "globals";
 import eslintTs from 'typescript-eslint'
 import js from "@eslint/js";
 import { FlatCompat } from "@eslint/eslintrc";
-
 const __dirname = import.meta.dirname;
 const tsPlugin = eslintTs.plugin
 const tsParser = eslintTs.parser
@@ -24,16 +23,15 @@ const compat = new FlatCompat({
     allConfig: js.configs.all
 });
 
+
 export default [...fixupConfigRules(compat.extends(
     "prettier",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:xss/recommended",
     "plugin:sonarjs/recommended-legacy",
-    "plugin:storybook/recommended",
+    // "plugin:storybook/recommended",
     "plugin:unicorn/recommended",
     "plugin:compat/recommended",
     "/home/dmitri/projects/eslint-config-webpractik/rules/best-practice.js",
@@ -55,6 +53,7 @@ export default [...fixupConfigRules(compat.extends(
         sonarjs: fixupPluginRules(sonarjs),
         compat: fixupPluginRules(compat),
         unicorn: fixupPluginRules(unicorn),
+
     },
 
     languageOptions: {
@@ -76,6 +75,8 @@ export default [...fixupConfigRules(compat.extends(
             },
         },
     },
+
+    files: ["src/**/*.ts"],
 
     settings: {
         "import/parsers": {

@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/webpractik/eslint-config-webpractik.git"
   },
+  "scripts": {
+    "eslint-inspect": "npx @eslint/config-inspector"
+  },
   "keywords": [
     "eslint",
     "config",
