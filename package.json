@@ -15,11 +15,12 @@
   "author": "Vorobiev Pavel",
   "license": "ISC",
   "peerDependencies": {
-    "eslint": ">= 8"
+    "eslint": "9.17.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "7.18.0",
-    "@typescript-eslint/parser": "7.18.0",
+    "@eslint/compat": "1.2.4",
+    "@eslint/eslintrc": "3.2.0",
+    "@eslint/js": "9.17.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-import-resolver-typescript": "3.6.3",
     "eslint-plugin-compat": "6.0.1",
@@ -28,13 +29,15 @@
     "eslint-plugin-no-secrets": "1.0.2",
     "eslint-plugin-prettier": "5.2.1",
     "eslint-plugin-react": "7.37.1",
-    "eslint-plugin-react-hooks": "4.6.2",
+    "eslint-plugin-react-hooks": "5.1.0",
     "eslint-plugin-simple-import-sort": "12.1.1",
-    "eslint-plugin-sonarjs": "2.0.3",
+    "eslint-plugin-sonarjs": "3.0.1",
     "eslint-plugin-storybook": "0.9.0",
     "eslint-plugin-unicorn": "56.0.0",
     "eslint-plugin-unused-imports": "4.1.4",
-    "eslint-plugin-xss": "0.1.12"
+    "eslint-plugin-xss": "0.1.12",
+    "globals": "15.13.0",
+    "typescript": "5.7.2"
   },
   "bugs": {
     "url": "https://github.com/webpractik/eslint-config-webpractik/issues"
