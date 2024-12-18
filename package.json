@@ -2,13 +2,14 @@
   "name": "eslint-config-webpractik",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "eslint.config.mjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webpractik/eslint-config-webpractik.git"
   },
   "scripts": {
-    "eslint-inspect": "npx @eslint/config-inspector"
+    "eslint-inspect": "npx @eslint/config-inspector",
+    "lint": "eslint src/test.ts"
   },
   "keywords": [
     "eslint",
@@ -36,7 +37,7 @@
     "eslint-plugin-simple-import-sort": "12.1.1",
     "eslint-plugin-sonarjs": "3.0.1",
     "eslint-plugin-storybook": "0.9.0",
-    "eslint-plugin-unicorn": "56.0.0",
+    "eslint-plugin-unicorn": "56.0.1",
     "eslint-plugin-unused-imports": "4.1.4",
     "eslint-plugin-xss": "0.1.12",
     "globals": "15.13.0",

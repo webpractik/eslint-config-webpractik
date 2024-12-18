@@ -29,15 +29,15 @@ export default [...fixupConfigRules(compat.extends(
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:xss/recommended",
+    // "plugin:xss/recommended",
     "plugin:sonarjs/recommended-legacy",
-    // "plugin:storybook/recommended",
+    "plugin:storybook/recommended",
     "plugin:unicorn/recommended",
     "plugin:compat/recommended",
-    "/home/dmitri/projects/eslint-config-webpractik/rules/best-practice.js",
-    "/home/dmitri/projects/eslint-config-webpractik/rules/react.js",
-    "/home/dmitri/projects/eslint-config-webpractik/rules/import.js",
-    "/home/dmitri/projects/eslint-config-webpractik/rules/unicorn.js",
+    `${__dirname}/rules/best-practice.js`,
+    `${__dirname}/rules/react.js`,
+    `${__dirname}/rules/import.js`,
+    `${__dirname}/rules/unicorn.js`,
 )), {
     plugins: {
         "@typescript-eslint": fixupPluginRules(tsPlugin),
@@ -49,11 +49,9 @@ export default [...fixupConfigRules(compat.extends(
         "simple-import-sort": simpleImportSort,
         "unused-imports": unusedImports,
         xss: fixupPluginRules(xss),
-        "no-secrets": noSecrets,
-        sonarjs: fixupPluginRules(sonarjs),
-        compat: fixupPluginRules(compat),
         unicorn: fixupPluginRules(unicorn),
-
+        sonarjs: fixupPluginRules(sonarjs),
+        "no-secrets": fixupPluginRules(noSecrets)
     },
 
     languageOptions: {
@@ -99,7 +97,6 @@ export default [...fixupConfigRules(compat.extends(
         "prettier/prettier": "error",
         "@typescript-eslint/no-use-before-define": "error",
         "@typescript-eslint/explicit-module-boundary-types": "off",
-
         "@typescript-eslint/unbound-method": ["error", {
             ignoreStatic: true,
         }],
@@ -107,13 +104,13 @@ export default [...fixupConfigRules(compat.extends(
         "@typescript-eslint/no-unused-vars": "error",
         "sonarjs/sonar-prefer-read-only-props": "off",
 
-        "xss/no-mixed-html": [2, {
-            functions: {
-                sanitize: {
-                    htmlOutput: true,
-                },
-            },
-        }],
+        // "xss/no-mixed-html": [2, {
+        //     functions: {
+        //         sanitize: {
+        //             htmlOutput: true,
+        //         },
+        //     },
+        // }],
 
         "no-secrets/no-secrets": "error",
     },
