@@ -6,7 +6,6 @@ import jsxA11Y from "eslint-plugin-jsx-a11y";
 import _import from "eslint-plugin-import";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import unusedImports from "eslint-plugin-unused-imports";
-import xss from "eslint-plugin-xss";
 import noSecrets from "eslint-plugin-no-secrets";
 import sonarjs from "eslint-plugin-sonarjs";
 import unicorn from "eslint-plugin-unicorn";
@@ -29,7 +28,6 @@ export default [...fixupConfigRules(compat.extends(
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
-    // "plugin:xss/recommended",
     "plugin:sonarjs/recommended-legacy",
     "plugin:storybook/recommended",
     "plugin:unicorn/recommended",
@@ -48,7 +46,6 @@ export default [...fixupConfigRules(compat.extends(
         import: fixupPluginRules(_import),
         "simple-import-sort": simpleImportSort,
         "unused-imports": unusedImports,
-        xss: fixupPluginRules(xss),
         unicorn: fixupPluginRules(unicorn),
         sonarjs: fixupPluginRules(sonarjs),
         "no-secrets": fixupPluginRules(noSecrets)
@@ -103,15 +100,6 @@ export default [...fixupConfigRules(compat.extends(
 
         "@typescript-eslint/no-unused-vars": "error",
         "sonarjs/sonar-prefer-read-only-props": "off",
-
-        // "xss/no-mixed-html": [2, {
-        //     functions: {
-        //         sanitize: {
-        //             htmlOutput: true,
-        //         },
-        //     },
-        // }],
-
         "no-secrets/no-secrets": "error",
     },
 }];
