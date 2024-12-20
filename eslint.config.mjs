@@ -46,7 +46,8 @@ export default [...fixupConfigRules(compat.extends(
         import: fixupPluginRules(_import),
         "simple-import-sort": simpleImportSort,
         "unused-imports": unusedImports,
-        xss: fixupPluginRules(xss),
+        // не поддерживает eslint-9
+        // xss: fixupPluginRules(xss),
         unicorn: fixupPluginRules(unicorn),
         sonarjs: fixupPluginRules(sonarjs),
         "no-secrets": fixupPluginRules(noSecrets)
