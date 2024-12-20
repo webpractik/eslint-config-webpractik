@@ -72,8 +72,6 @@ export default [...fixupConfigRules(compat.extends(
         },
     },
 
-    files: ["src/**/*.ts"],
-
     settings: {
         "import/parsers": {
             "@typescript-eslint/parser": [".ts", ".tsx"],
