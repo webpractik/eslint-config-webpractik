@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-webpractik",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -14,30 +14,43 @@
   ],
   "author": "Vorobiev Pavel",
   "license": "ISC",
-  "peerDependencies": {
-    "eslint": ">= 8"
+  "engines": {
+    "node": ">=22"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "7.18.0",
-    "@typescript-eslint/parser": "7.18.0",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-import-resolver-typescript": "3.6.3",
-    "eslint-plugin-compat": "6.0.1",
+    "@eslint-react/eslint-plugin": "1.23.2",
+    "@eslint/compat": "1.2.5",
+    "@eslint/js": "9.18.0",
+    "@regru/eslint-plugin-prefer-early-return": "1.0.0",
+    "@stylistic/eslint-plugin": "2.13.0",
+    "@vitest/eslint-plugin": "1.1.25",
+    "eslint-config-flat-gitignore": "1.0.0",
+    "eslint-import-resolver-typescript": "3.7.0",
     "eslint-plugin-import": "2.31.0",
-    "eslint-plugin-jsx-a11y": "6.10.0",
-    "eslint-plugin-no-secrets": "1.0.2",
-    "eslint-plugin-prettier": "5.2.1",
-    "eslint-plugin-react": "7.37.1",
-    "eslint-plugin-react-hooks": "4.6.2",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-perfectionist": "4.6.0",
+    "eslint-plugin-promise": "7.2.1",
+    "eslint-plugin-react": "7.37.3",
+    "eslint-plugin-react-hooks": "5.1.0",
+    "eslint-plugin-react-refresh": "0.4.18",
     "eslint-plugin-simple-import-sort": "12.1.1",
-    "eslint-plugin-sonarjs": "2.0.3",
-    "eslint-plugin-storybook": "0.9.0",
-    "eslint-plugin-unicorn": "56.0.0",
+    "eslint-plugin-sonarjs": "3.0.1",
+    "eslint-plugin-storybook": "0.11.2",
+    "eslint-plugin-unicorn": "56.0.1",
     "eslint-plugin-unused-imports": "4.1.4",
-    "eslint-plugin-xss": "0.1.12"
+    "globals": "15.14.0",
+    "typescript-eslint": "8.19.1"
   },
   "bugs": {
     "url": "https://github.com/webpractik/eslint-config-webpractik/issues"
   },
-  "homepage": "https://github.com/webpractik/eslint-config-webpractik#readme"
+  "homepage": "https://github.com/webpractik/eslint-config-webpractik#readme",
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "@typescript-eslint/parser": "8.19.1",
+    "@typescript-eslint/utils": "8.19.1",
+    "eslint": "9.18.0",
+    "jiti": "2.4.2",
+    "typescript": "5.7.3"
+  }
 }

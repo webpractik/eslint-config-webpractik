@@ -14,7 +14,6 @@ module.exports = {
         },
     },
     extends: [
-        'prettier',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
         'plugin:react/recommended',
@@ -22,9 +21,7 @@ module.exports = {
         'plugin:jsx-a11y/recommended',
         'plugin:xss/recommended',
         'plugin:sonarjs/recommended-legacy',
-        'plugin:storybook/recommended',
         'plugin:unicorn/recommended',
-        'plugin:compat/recommended',
         require.resolve('./rules/best-practice'),
         require.resolve('./rules/react'),
         require.resolve('./rules/import'),
@@ -34,7 +31,6 @@ module.exports = {
         '@typescript-eslint',
         'react',
         'react-hooks',
-        'prettier',
         'jsx-a11y',
         'import',
         'simple-import-sort',
@@ -42,12 +38,9 @@ module.exports = {
         'xss',
         'no-secrets',
         'sonarjs',
-        'compat',
         'unicorn',
     ],
     rules: {
-        'prettier/prettier': 'error',
-
         '@typescript-eslint/no-use-before-define': 'error',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
