@@ -1,6 +1,4 @@
-import type { TSESLint } from '@typescript-eslint/utils';
-
-export const unicornRules = {
+export default {
     'unicorn/catch-error-name': 2,
     'unicorn/consistent-destructuring': 2,
     'unicorn/consistent-empty-array-spread': 2,
@@ -45,4 +43,4 @@ export const unicornRules = {
     'unicorn/prefer-type-error': 2,
     'unicorn/switch-case-braces': 2,
     'unicorn/throw-new-error': 2,
-} as const satisfies TSESLint.FlatConfig.Rules;
+};

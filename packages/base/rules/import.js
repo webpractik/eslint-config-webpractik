@@ -1,6 +1,4 @@
-import type { TSESLint } from '@typescript-eslint/utils';
-
-export const importRules = {
+export default {
     'import/extensions': 0,
     'import/first': 2,
     // https://github.com/import-js/eslint-plugin-import/issues/2913
@@ -14,4 +12,4 @@ export const importRules = {
     'import/no-named-as-default': 2,
     'import/no-useless-path-segments': [2, { noUselessIndex: true }],
     'import/prefer-default-export': 0,
-} as const satisfies TSESLint.FlatConfig.Rules;
+};

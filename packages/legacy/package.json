@@ -1,0 +1,41 @@
+{
+  "name": "@wp/eslint-config-legacy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webpractik/eslint-config-webpractik.git"
+  },
+  "homepage": "https://github.com/webpractik/eslint-config-webpractik#readme",
+  "bugs": {
+    "url": "https://github.com/webpractik/eslint-config-webpractik/issues"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "webpractik"
+  ],
+  "author": "Vorobiev Pavel",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-import-resolver-typescript": "3.6.3",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-jsx-a11y": "6.10.0",
+    "eslint-plugin-no-secrets": "1.0.2",
+    "eslint-plugin-prettier": "5.2.1",
+    "eslint-plugin-react": "7.37.1",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "eslint-plugin-sonarjs": "2.0.3",
+    "eslint-plugin-unicorn": "56.0.0",
+    "eslint-plugin-unused-imports": "4.1.4",
+    "eslint-plugin-xss": "0.1.12"
+  }
+}

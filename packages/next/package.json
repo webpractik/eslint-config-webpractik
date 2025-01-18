@@ -1,0 +1,34 @@
+{
+  "name": "@wp/eslint-config-next",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webpractik/eslint-config-webpractik.git"
+  },
+  "homepage": "https://github.com/webpractik/eslint-config-webpractik#readme",
+  "bugs": {
+    "url": "https://github.com/webpractik/eslint-config-webpractik/issues"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "webpractik"
+  ],
+  "author": "Vorobiev Pavel",
+  "license": "MIT",
+  "scripts": {
+    "inspect": "eslint --inspect-config"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=9"
+  },
+  "dependencies": {
+    "@wp/eslint-config-react": "1.0.0",
+    "@next/eslint-plugin-next": "15.1.5"
+  }
+}
