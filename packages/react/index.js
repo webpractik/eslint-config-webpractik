@@ -2,6 +2,8 @@ import baseConfig from '@wp/eslint-config-wp';
 import eslintReact from '@eslint-react/eslint-plugin';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
+import reactPerf from 'eslint-plugin-react-perf';
+import reactCompiler from 'eslint-plugin-react-compiler';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import storybook from 'eslint-plugin-storybook';
 import globals from 'globals';
@@ -53,6 +55,19 @@ export default [
             react: { version: 'detect' },
         },
     },
+    {
+        files: [fileTypes],
+        ...reactPerf.configs.flat.recommended,
+    },
+    {
+        rules: {
+            'react-perf/jsx-no-new-object-as-prop': 2,
+            'react-perf/jsx-no-new-array-as-prop': 2,
+            'react-perf/jsx-no-new-function-as-prop': 2,
+            'react-perf/jsx-no-jsx-as-prop': 2,
+        },
+    },
+    reactCompiler.configs.recommended,
     {
         files: [fileTypes],
         ...jsxA11y.flatConfigs.recommended,
