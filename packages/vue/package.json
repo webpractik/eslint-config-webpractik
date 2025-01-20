@@ -17,9 +17,6 @@
   ],
   "author": "Vorobiev Pavel",
   "license": "MIT",
-  "scripts": {
-    "inspect": "eslint --inspect-config"
-  },
   "publishConfig": {
     "access": "public"
   },

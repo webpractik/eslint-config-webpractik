@@ -6,7 +6,7 @@ export default {
     'import/newline-after-import': 2,
     'import/no-anonymous-default-export': 2,
     'import/no-cycle': 2,
-    'import/no-default-export': 2,
+    'import/no-default-export': 0,
     'import/no-duplicates': [2, { 'prefer-inline': true }],
     'import/no-extraneous-dependencies': ['error', { includeTypes: true }],
     'import/no-named-as-default': 2,

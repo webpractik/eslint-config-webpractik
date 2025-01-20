@@ -1,15 +1,15 @@
 import reactConfig from '@wp/eslint-config-react';
-import nextPlugin from '@next/eslint-plugin-next';
+import { FlatCompat } from '@eslint/eslintrc';
+
+const compat = new FlatCompat({
+    baseDirectory: import.meta.dirname,
+});
 
 export default [
     ...reactConfig,
+    ...compat.config({ extends: ['plugin:@next/next/recommended'] }),
     {
-        files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
-        plugins: {
-            '@next/next': nextPlugin,
-        },
         rules: {
-            ...nextPlugin.configs.recommended.rules,
             '@next/next/next-script-for-ga': 'error',
             '@next/next/no-async-client-component': 'error',
             '@next/next/no-before-interactive-script-outside-document': 'error',

@@ -23,7 +23,7 @@ export default {
     ],
     '@typescript-eslint/default-param-last': 2,
     '@typescript-eslint/dot-notation': 2,
-    '@typescript-eslint/explicit-module-boundary-types': 2,
+    '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/method-signature-style': 2,
     '@typescript-eslint/naming-convention': [
         2,
@@ -53,15 +53,6 @@ export default {
             selector: 'typeLike',
             trailingUnderscore: 'forbid',
         },
-        // https://typescript-eslint.io/rules/naming-convention/#enforce-that-boolean-variables-are-prefixed-with-an-allowed-verb
-        {
-            format: ['PascalCase'],
-            leadingUnderscore: 'forbid',
-            prefix: ['is', 'are', 'has', 'should', 'can'],
-            selector: 'variable',
-            trailingUnderscore: 'forbid',
-            types: ['boolean'],
-        },
         {
             format: null,
             modifiers: ['destructured'],
@@ -84,7 +75,7 @@ export default {
     '@typescript-eslint/no-inferrable-types': 2,
     '@typescript-eslint/no-loop-func': 2,
     '@typescript-eslint/no-misused-promises': 0,
-    '@typescript-eslint/no-require-imports': 0, // eventually we will enable https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-module.md instead
+    '@typescript-eslint/no-require-imports': 0,
     '@typescript-eslint/no-shadow': [
         2,
         {
@@ -104,7 +95,7 @@ export default {
             enforceForJSX: true,
         },
     ],
-    '@typescript-eslint/no-use-before-define': 2,
+    '@typescript-eslint/no-use-before-define': [2, { allowNamedExports: true }],
     '@typescript-eslint/prefer-function-type': 2,
     '@typescript-eslint/prefer-nullish-coalescing': [2, { ignorePrimitives: true }],
     '@typescript-eslint/prefer-optional-chain': 2,

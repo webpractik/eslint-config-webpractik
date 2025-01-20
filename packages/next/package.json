@@ -28,7 +28,8 @@
     "eslint": ">=9"
   },
   "dependencies": {
-    "@wp/eslint-config-react": "1.0.0",
-    "@next/eslint-plugin-next": "15.1.5"
+    "@eslint/eslintrc": "3.2.0",
+    "@next/eslint-plugin-next": "15.1.5",
+    "@wp/eslint-config-react": "1.0.0"
   }
 }

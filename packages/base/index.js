@@ -1,6 +1,5 @@
 import tseslint from 'typescript-eslint';
 import eslintJs from '@eslint/js';
-import globals from 'globals';
 import stylistic from '@stylistic/eslint-plugin';
 import perfectionist from 'eslint-plugin-perfectionist';
 import preferEarlyReturn from '@regru/eslint-plugin-prefer-early-return';
@@ -23,19 +22,11 @@ const fileTypes = `**/*{js,mjs,cjs,ts,mts,cts,jsx,tsx,mtsx,mjsx}`;
 export default tseslint.config(
     {
         files: [fileTypes],
-        extends: [eslintJs.configs.recommended],
-    },
-    {
-        files: [fileTypes],
-        rules: baseRules,
-    },
-    {
-        files: [fileTypes],
-        extends: tseslint.configs.strictTypeChecked,
-    },
-    {
-        files: [fileTypes],
-        rules: tsRules,
+        extends: [eslintJs.configs.recommended, tseslint.configs.strictTypeChecked],
+        rules: {
+            ...baseRules,
+            ...tsRules,
+        },
     },
     {
         files: [fileTypes],
@@ -51,14 +42,10 @@ export default tseslint.config(
     },
     {
         files: [fileTypes],
-        languageOptions: {
-            globals: globals.builtin,
-        },
-        plugins: { unicorn },
-        rules: {
-            ...unicorn.configs['flat/recommended'].rules,
-            ...unicornRules,
-        },
+        ...unicorn.configs['flat/recommended'],
+    },
+    {
+        rules: unicornRules,
     },
     {
         files: [fileTypes],
@@ -119,20 +106,6 @@ export default tseslint.config(
         ],
         plugins: { vitest },
         rules: { ...vitest.configs.recommended.rules, ...vitestRules },
-    },
-    {
-        files: ['**/*.d.ts'],
-        rules: {
-            'import/no-default-export': 0,
-        },
-    },
-    {
-        files: ['**/*.config.*'],
-        rules: {
-            'arrow-return-style/no-export-default-arrow': 0,
-            'import/no-anonymous-default-export': 0,
-            'import/no-default-export': 0,
-        },
     },
     {
         files: [fileTypes],

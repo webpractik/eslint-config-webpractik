@@ -43,4 +43,14 @@ export default {
     'unicorn/prefer-type-error': 2,
     'unicorn/switch-case-braces': 2,
     'unicorn/throw-new-error': 2,
+    'unicorn/prevent-abbreviations': [
+        'error',
+        {
+            replacements: {
+                props: false,
+                ref: false,
+                params: false,
+            },
+        },
+    ],
 };

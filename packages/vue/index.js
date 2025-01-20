@@ -8,10 +8,6 @@ export default [
         plugins: {
             vue: vuePlugin,
         },
-        rules: {
-            ...vuePlugin.configs['flat/essential'].rules,
-
-            'vue/no-v-html': 'off',
-        },
+        rules: vuePlugin.configs['flat/essential'].rules,
     },
 ];

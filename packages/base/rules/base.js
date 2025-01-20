@@ -5,7 +5,7 @@ export default {
     'default-param-last': 0,
     'dot-notation': 0,
     eqeqeq: 2,
-    'func-style': 2,
+    'func-style': 0,
     'logical-assignment-operators': [2, 'never'],
 
     'no-array-constructor': 2,
@@ -24,7 +24,8 @@ export default {
     'no-multi-str': 2,
     'no-negated-condition': 2,
     'no-nested-ternary': 2,
-    'no-new-object': 2,
+    'no-new-object': 0,
+    'no-new-symbol': 0,
     'no-new-wrappers': 2,
     'no-octal-escape': 2,
     'no-param-reassign': 2,
@@ -144,14 +145,6 @@ export default {
         {
             message: 'Avoid enums.',
             selector: 'TSEnumDeclaration',
-        },
-        {
-            message: 'Avoid classes. Use functions and objects instead.',
-            selector: 'ClassDeclaration',
-        },
-        {
-            message: 'Avoid classes. Use functions and objects instead.',
-            selector: 'ClassExpression',
         },
     ],
     'no-return-assign': [2, 'always'],
