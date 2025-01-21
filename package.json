@@ -16,9 +16,9 @@
   "author": "Vorobiev Pavel",
   "license": "MIT",
   "scripts": {
-    "add-change": "npx @changesets/cli",
-    "version": "npx @changesets/cli version",
-    "publish": "npx @changesets/cli publish"
+    "add-change": "changeset",
+    "version": "changeset version",
+    "publish": "changeset publish"
   },
   "engines": {
     "node": ">=22"
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/webpractik/eslint-config-webpractik#readme",
   "devDependencies": {
+    "@changesets/cli": "2.27.11",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
     "eslint": "9.18.0",
