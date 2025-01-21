@@ -1,5 +1,5 @@
 {
-  "name": "@wp/eslint-config-next",
+  "name": "@webpractik/eslint-config-next",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -27,6 +27,6 @@
   "dependencies": {
     "@eslint/eslintrc": "3.2.0",
     "@next/eslint-plugin-next": "15.1.5",
-    "@wp/eslint-config-react": "1.0.0"
+    "@webpractik/eslint-config-react": "1.0.0"
   }
 }

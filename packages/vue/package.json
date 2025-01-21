@@ -1,5 +1,5 @@
 {
-  "name": "@wp/eslint-config-vue",
+  "name": "@webpractik/eslint-config-vue",
   "version": "1.0.0",
   "main": "index.js",
   "repository": {

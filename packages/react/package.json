@@ -1,5 +1,5 @@
 {
-  "name": "@wp/eslint-config-react",
+  "name": "@webpractik/eslint-config-react",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@eslint-react/eslint-plugin": "1.23.2",
-    "@wp/eslint-config-wp": "1.0.0",
+    "@webpractik/eslint-config": "1.0.0",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-react": "7.37.3",
     "eslint-plugin-react-compiler": "19.0.0-beta-decd7b8-20250118",

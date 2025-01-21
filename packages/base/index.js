@@ -10,6 +10,7 @@ import unusedImports from 'eslint-plugin-unused-imports';
 import vitest from '@vitest/eslint-plugin';
 import * as regexpPlugin from 'eslint-plugin-regexp';
 import pluginPromise from 'eslint-plugin-promise';
+import gitignore from 'eslint-config-flat-gitignore';
 
 import baseRules from './rules/base.js';
 import importRules from './rules/import.js';
@@ -22,6 +23,8 @@ import vitestRules from './rules/vitest.js';
 const fileTypes = `**/*{js,mjs,cjs,ts,mts,cts,jsx,tsx,mtsx,mjsx}`;
 
 export default tseslint.config(
+    gitignore(),
+
     {
         files: [fileTypes],
         extends: [eslintJs.configs.recommended, tseslint.configs.strictTypeChecked],

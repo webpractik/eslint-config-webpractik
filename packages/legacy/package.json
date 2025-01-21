@@ -1,5 +1,5 @@
 {
-  "name": "@wp/eslint-config-legacy",
+  "name": "@webpractik/eslint-config-legacy",
   "version": "1.0.0",
   "main": "index.js",
   "type": "commonjs",

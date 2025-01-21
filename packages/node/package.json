@@ -1,5 +1,5 @@
 {
-  "name": "@wp/eslint-config-node",
+  "name": "@webpractik/eslint-config-node",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -28,7 +28,7 @@
     "eslint": ">=9"
   },
   "dependencies": {
-    "@wp/eslint-config-wp": "1.0.0",
+    "@webpractik/eslint-config": "1.0.0",
     "eslint-plugin-node": "11.1.0",
     "globals": "15.14.0"
   }
