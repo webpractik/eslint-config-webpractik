@@ -116,21 +116,6 @@ export default {
             selector: "BinaryExpression[operator='in']",
         },
         {
-            message:
-                'Avoid access modifiers. In Javascript modules there is no need to limit developer access to properties.',
-            selector: "PropertyDefinition[accessibility='public']",
-        },
-        {
-            message:
-                'Avoid access modifiers. In Javascript modules there is no need to limit developer access to properties.',
-            selector: "PropertyDefinition[accessibility='protected']",
-        },
-        {
-            message:
-                'Avoid access modifiers. In Javascript modules there is no need to limit developer access to properties.',
-            selector: "PropertyDefinition[accessibility='private']",
-        },
-        {
             message: 'Avoid PropTypes. Use Typescript instead.',
             selector: "Identifier[name='PropTypes']",
         },

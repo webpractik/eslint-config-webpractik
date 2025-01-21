@@ -1,28 +1,41 @@
 # eslint-config-webpractik
 
-## Подключение
-``` json
-// .eslintrc
+Этот монорепозиторий содержит пакеты с конфигурациями ESLint для различных типов проектов.
 
-{
-    "root": true,
-    "extends": ["webpractik"]
-}
+Структура пакетов:
+
+```text
+        base            legacy
+      /   |   \
+  react  node  vue
+    |
+  next
 ```
 
+- [@webpractik/eslint-config](packages/base/README.md)
 
-## Extends & Plugins:
+Базовая конфигурация, содержащая основные правила ESLint, общие для всех типов проектов. Требует node > 20 и eslint > 9
 
-- @typescript-eslint
-- react
-- react-hooks
-- sonarjs
-- unicorn
-- prettier
-- jsx-a11y
-- import
-- simple-import-sort
-- unused-imports
-- storybook
-- xss
-- no-secrets
+- [@webpractik/eslint-config-legacy](packages/legacy/README.md)
+
+Конфигурация для поддержки старых проектов с eslint < 9. Экспортирует commonjs модуль.
+
+- [@webpractik/eslint-config-react](packages/react/README.md)
+
+Конфигурация для React-проектов. Наследует правила из base и добавляет рекомендации для работы с React.
+
+- [@webpractik/eslint-config-next](packages/next/README.md)
+
+Конфигурация для Next.js-проектов. Наследует правила из react и добавляет более строгие правила для next.
+
+
+- [@webpractik/eslint-config-node](packages/node/README.md)
+
+Конфигурация для Node.js-проектов. Наследует правила из base и добавляет рекомендации для серверной разработки.
+
+- [@webpractik/eslint-config-vue](packages/vue/README.md)
+
+Конфигурация для Vue.js-проектов. Наследует правила из base и включает рекомендации для разработки на Vue.js.
+
+
+

@@ -1,4 +1,4 @@
-import reactConfig from '@wp/eslint-config-react';
+import reactConfig from '@webpractik/eslint-config-react';
 import { FlatCompat } from '@eslint/eslintrc';
 
 const compat = new FlatCompat({

@@ -35,6 +35,15 @@ export default tseslint.config(
     },
 
     {
+        languageOptions: {
+            parserOptions: {
+                projectService: true,
+                tsconfigRootDir: import.meta.dirname,
+            },
+        },
+    },
+
+    {
         files: [fileTypes],
         plugins: { '@stylistic': stylistic },
         rules: stylisticRules,

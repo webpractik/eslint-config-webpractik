@@ -1,4 +1,4 @@
-import baseConfig from '@wp/eslint-config-wp';
+import baseConfig from '@webpractik/eslint-config';
 import eslintReact from '@eslint-react/eslint-plugin';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';

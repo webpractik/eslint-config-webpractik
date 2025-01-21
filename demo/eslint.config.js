@@ -1,3 +1,3 @@
-import baseConfig from '@wp/eslint-config-wp';
+import wpConfigReact from '@webpractik/eslint-config-react';
 
-export default [...baseConfig];
+export default [...wpConfigReact];

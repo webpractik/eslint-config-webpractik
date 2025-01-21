@@ -25,7 +25,7 @@
     "vue": ">=3"
   },
   "dependencies": {
-    "@wp/eslint-config-wp": "1.0.0",
+    "@webpractik/eslint-config": "1.0.0",
     "eslint-plugin-vue": "9.32.0"
   }
 }

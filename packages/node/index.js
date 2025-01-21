@@ -1,4 +1,4 @@
-import baseConfig from '@wp/eslint-config-wp';
+import baseConfig from '@webpractik/eslint-config';
 import nodePlugin from 'eslint-plugin-node';
 
 export default [
