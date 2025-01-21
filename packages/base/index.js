@@ -8,6 +8,8 @@ import sonarjs from 'eslint-plugin-sonarjs';
 import importPlugin from 'eslint-plugin-import';
 import unusedImports from 'eslint-plugin-unused-imports';
 import vitest from '@vitest/eslint-plugin';
+import * as regexpPlugin from 'eslint-plugin-regexp';
+import pluginPromise from 'eslint-plugin-promise';
 
 import baseRules from './rules/base.js';
 import importRules from './rules/import.js';
@@ -28,11 +30,13 @@ export default tseslint.config(
             ...tsRules,
         },
     },
+
     {
         files: [fileTypes],
         plugins: { '@stylistic': stylistic },
         rules: stylisticRules,
     },
+
     {
         files: [fileTypes],
         plugins: { '@regru/prefer-early-return': preferEarlyReturn },
@@ -40,6 +44,7 @@ export default tseslint.config(
             '@regru/prefer-early-return/prefer-early-return': [2, { maximumStatements: 1 }],
         },
     },
+
     {
         files: [fileTypes],
         ...unicorn.configs['flat/recommended'],
@@ -47,6 +52,7 @@ export default tseslint.config(
     {
         rules: unicornRules,
     },
+
     {
         files: [fileTypes],
         plugins: { sonarjs },
@@ -55,13 +61,23 @@ export default tseslint.config(
             ...sonarRules,
         },
     },
+
     {
         files: [fileTypes],
         plugins: { perfectionist },
         rules: {
             ...perfectionist.configs['recommended-alphabetical'].rules,
+            'perfectionist/sort-modules': 0,
         },
     },
+
+    {
+        files: [fileTypes],
+        ...regexpPlugin.configs['flat/recommended'],
+    },
+
+    pluginPromise.configs['flat/recommended'],
+
     {
         files: [fileTypes],
         plugins: { import: importPlugin },
@@ -79,6 +95,7 @@ export default tseslint.config(
             },
         },
     },
+
     {
         files: [fileTypes],
         plugins: {
@@ -98,6 +115,7 @@ export default tseslint.config(
             ],
         },
     },
+
     {
         files: [
             `**/*.{test,spec}.{${fileTypes}}`,
@@ -107,6 +125,7 @@ export default tseslint.config(
         plugins: { vitest },
         rules: { ...vitest.configs.recommended.rules, ...vitestRules },
     },
+
     {
         files: [fileTypes],
         linterOptions: {
