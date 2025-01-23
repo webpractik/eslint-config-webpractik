@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@webpractik/eslint-config": "2.0.0",
-    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-n": "17.15.1",
     "globals": "15.14.0"
   }
 }
