@@ -1,5 +1,11 @@
 # @webpractik/eslint-config-node
 
+## 2.0.1
+
+### Patch Changes
+
+- e434352: заменил deprecated node плагин, на более новый
+
 ## 2.0.0
 
 ### Major Changes
