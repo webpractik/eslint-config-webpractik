@@ -1,4 +1,11 @@
 export default {
+    '@typescript-eslint/naming-convention': 0,
+    '@typescript-eslint/no-array-constructor': 0,
+    '@typescript-eslint/explicit-module-boundary-types': 0,
+    '@typescript-eslint/no-misused-promises': 0,
+    '@typescript-eslint/no-require-imports': 0,
+    '@typescript-eslint/use-unknown-in-catch-callback-variable': 0,
+
     '@typescript-eslint/array-type': 2,
     '@typescript-eslint/ban-ts-comment': [
         2,
@@ -10,7 +17,7 @@ export default {
         },
     ],
     '@typescript-eslint/consistent-type-assertions': 2,
-    '@typescript-eslint/consistent-type-definitions': 2,
+    '@typescript-eslint/consistent-type-definitions': [2, 'type'],
     '@typescript-eslint/consistent-type-exports': [
         2,
         { fixMixedExportsWithInlineTypeSpecifier: true },
@@ -23,47 +30,7 @@ export default {
     ],
     '@typescript-eslint/default-param-last': 2,
     '@typescript-eslint/dot-notation': 2,
-    '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/method-signature-style': 2,
-    '@typescript-eslint/naming-convention': [
-        2,
-        {
-            format: ['camelCase', 'StrictPascalCase'],
-            leadingUnderscore: 'forbid',
-            selector: 'default',
-            trailingUnderscore: 'forbid',
-        },
-        {
-            format: ['camelCase', 'UPPER_CASE'],
-            leadingUnderscore: 'forbid',
-            modifiers: ['const'],
-            selector: 'variable',
-            trailingUnderscore: 'forbid',
-            types: ['string', 'number'],
-        },
-        {
-            format: null,
-            leadingUnderscore: 'allowSingleOrDouble',
-            selector: 'objectLiteralProperty',
-            trailingUnderscore: 'forbid',
-        },
-        {
-            format: ['PascalCase'],
-            leadingUnderscore: 'forbid',
-            selector: 'typeLike',
-            trailingUnderscore: 'forbid',
-        },
-        {
-            format: null,
-            modifiers: ['destructured'],
-            selector: 'variable',
-        },
-        {
-            format: null,
-            selector: 'typeProperty',
-        },
-    ],
-    '@typescript-eslint/no-array-constructor': 0,
     '@typescript-eslint/no-empty-function': 2,
     '@typescript-eslint/no-empty-object-type': [
         2,
@@ -74,8 +41,6 @@ export default {
     '@typescript-eslint/no-import-type-side-effects': 2,
     '@typescript-eslint/no-inferrable-types': 2,
     '@typescript-eslint/no-loop-func': 2,
-    '@typescript-eslint/no-misused-promises': 0,
-    '@typescript-eslint/no-require-imports': 0,
     '@typescript-eslint/no-shadow': [
         2,
         {
@@ -101,5 +66,4 @@ export default {
     '@typescript-eslint/prefer-optional-chain': 2,
     '@typescript-eslint/prefer-string-starts-ends-with': 2,
     '@typescript-eslint/switch-exhaustiveness-check': 2,
-    '@typescript-eslint/use-unknown-in-catch-callback-variable': 0,
 };
