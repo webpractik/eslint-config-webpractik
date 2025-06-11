@@ -1,5 +1,13 @@
 # @webpractik/eslint-config-vue
 
+## 2.0.1
+
+### Patch Changes
+
+- af79e90: update dependencies
+- Updated dependencies [af79e90]
+    - @webpractik/eslint-config@2.0.1
+
 ## 2.0.0
 
 ### Major Changes

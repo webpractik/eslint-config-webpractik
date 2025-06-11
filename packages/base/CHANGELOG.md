@@ -1,5 +1,11 @@
 # @webpractik/eslint-config
 
+## 2.0.1
+
+### Patch Changes
+
+- af79e90: update dependencies
+
 ## 2.0.0
 
 ### Major Changes
