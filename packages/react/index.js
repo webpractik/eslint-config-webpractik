@@ -59,14 +59,6 @@ export default [
         files: [fileTypes],
         ...reactPerf.configs.flat.recommended,
     },
-    {
-        rules: {
-            'react-perf/jsx-no-new-object-as-prop': 2,
-            'react-perf/jsx-no-new-array-as-prop': 2,
-            'react-perf/jsx-no-new-function-as-prop': 2,
-            'react-perf/jsx-no-jsx-as-prop': 2,
-        },
-    },
     reactCompiler.configs.recommended,
     {
         files: [fileTypes],
@@ -101,7 +93,7 @@ export default [
         },
     },
     {
-        files: ['**/.storybook/main.@(js|cjs|mjs|ts)'],
+        files: ['**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)'],
         rules: { ...storybook.configs['flat/recommended'][2].rules },
     },
 ];
