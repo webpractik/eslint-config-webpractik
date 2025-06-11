@@ -1,5 +1,11 @@
 # @webpractik/eslint-config-react
 
+## 2.0.3
+
+### Patch Changes
+
+- rules: снизил приоритет для правил react-perf
+
 ## 2.0.2
 
 ### Patch Changes
