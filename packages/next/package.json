@@ -25,8 +25,8 @@
     "eslint": ">=9"
   },
   "dependencies": {
-    "@eslint/eslintrc": "3.2.0",
-    "@next/eslint-plugin-next": "15.1.5",
+    "@eslint/eslintrc": "3.3.1",
+    "@next/eslint-plugin-next": "15.3.3",
     "@webpractik/eslint-config-react": "2.0.0"
   }
 }

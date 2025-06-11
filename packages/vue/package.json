@@ -26,6 +26,6 @@
   },
   "dependencies": {
     "@webpractik/eslint-config": "2.0.0",
-    "eslint-plugin-vue": "9.32.0"
+    "eslint-plugin-vue": "10.2.0"
   }
 }

@@ -24,4 +24,9 @@ export default {
     'react/no-array-index-key': 2,
     'react/no-this-in-sfc': 2,
     'react/no-unstable-nested-components': [2, { allowAsProps: false }],
+
+    'react-perf/jsx-no-new-object-as-prop': 1,
+    'react-perf/jsx-no-new-array-as-prop': 1,
+    'react-perf/jsx-no-new-function-as-prop': 1,
+    'react-perf/jsx-no-jsx-as-prop': 1,
 };

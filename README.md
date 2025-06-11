@@ -5,7 +5,7 @@
 Структура пакетов:
 
 ```text
-        base            legacy
+        base            (legacy)
       /   |   \
   react  node  vue
     |
