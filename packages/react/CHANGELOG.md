@@ -1,5 +1,11 @@
 # @webpractik/eslint-config-react
 
+## 2.0.2
+
+### Patch Changes
+
+- 75c98ec: rules: снизил приоритет для правил react-perf, фикс правил для storybook
+
 ## 2.0.1
 
 ### Patch Changes
