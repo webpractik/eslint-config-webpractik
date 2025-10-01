@@ -1,5 +1,13 @@
 # @webpractik/eslint-config-next
 
+## 2.0.4
+
+### Patch Changes
+
+- Bump versions
+- Updated dependencies
+    - @webpractik/eslint-config-react@2.0.4
+
 ## 2.0.3
 
 ### Patch Changes

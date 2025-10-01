@@ -1,5 +1,13 @@
 # @webpractik/eslint-config-node
 
+## 2.0.3
+
+### Patch Changes
+
+- Bump versions
+- Updated dependencies
+    - @webpractik/eslint-config@2.0.2
+
 ## 2.0.2
 
 ### Patch Changes

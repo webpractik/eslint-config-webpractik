@@ -1,6 +1,6 @@
 {
   "name": "@webpractik/eslint-config-node",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "index.js",
   "type": "module",
   "repository": {
@@ -28,7 +28,7 @@
     "eslint": ">=9"
   },
   "dependencies": {
-    "@webpractik/eslint-config": "2.0.1",
+    "@webpractik/eslint-config": "2.0.2",
     "eslint-plugin-n": "17.23.1",
     "globals": "16.4.0"
   }
