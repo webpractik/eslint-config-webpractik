@@ -1,5 +1,11 @@
 # @webpractik/eslint-config-react
 
+## 2.0.6
+
+### Patch Changes
+
+- hooks-extra rules
+
 ## 2.0.5
 
 ### Patch Changes
