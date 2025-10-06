@@ -38,7 +38,6 @@ export default [
         rules: {
             '@eslint-react/no-leaked-conditional-rendering': 2,
             '@eslint-react/no-class-component': 2,
-            '@eslint-react/no-complex-conditional-rendering': 2,
             '@eslint-react/hooks-extra/ensure-custom-hooks-using-other-hooks': 2,
             '@eslint-react/hooks-extra/no-unnecessary-use-callback': 2,
             '@eslint-react/hooks-extra/no-unnecessary-use-memo': 2,
